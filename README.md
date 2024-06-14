@@ -37,11 +37,12 @@ Project: Payroll and Tax Management System. Client: Payconz. My Tasks: Multi Cur
 - Implemented APIs to generate comprehensive currency history reports for preceding months.
 
 **Undergraduate Research Assistant @ BRAC University (_October 2020 - February 2023_)**
+
 Lab: Computing for Sustainability and Social Good (C2SG) Lab 
 Supervisor: Jannatun Noor, Assistant Professor, Brac University.
 Consultant: Prof. Dr. A. B. M. Alim Al Islam, Professor, Bangladesh University of Engineering and Technology.
 
-*My responsibilities extended to supporting research efforts of my supervisor, assisting her thesis students, and providing valuable guidance to their research pursuits. Some of the notable achievements during my tenure include:
+My responsibilities extended to supporting research efforts of my supervisor, assisting her thesis students, and providing valuable guidance to their research pursuits. Some of the notable achievements during my tenure include:
 
 - Inaugurated a novel framework for HCI4D researchers to effectively approach HVECs in Andharmanik and Ruma.
 - Executed Linear Regression with SPSS with different demographics to understand participants’ needs.
