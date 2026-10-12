@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a software engineer and ML engineer based in New York City. I build backend systems, ML pipelines, and LLM agents, and I like measuring whether they actually work. I recently finished my MS in Computer Science at Oklahoma State University.
+I am a software engineer and ML engineer in New York City. I like building systems that have to be right: ML pipelines that replace manual checking, backends that thousands of people depend on, and LLM agents that call tools without guessing. I recently finished my MS in Computer Science at Oklahoma State University.
 
 **I am open to Software Engineer, ML Engineer, and AI Engineer roles.**
 
@@ -29,11 +29,12 @@ I am a software engineer and ML engineer based in New York City. I build backend
 
 <div class="card has-media">
   <div>
-    <h3>LLM Agent for Zero-Knowledge Proofs</h3>
-    <p><b>Problem:</b> LLMs often leave out or invent the exact values that tools need, so an agent can quietly call the wrong backend or act for the wrong user.</p>
-    <p><b>What I built:</b> a chat assistant where a LangGraph agent runs a zero-knowledge proof system through 8 custom MCP tools, with 20 server-side checks that complete or override what the model sends.</p>
-    <p class="result">Result: task completion rose from 70% to 93%, and all 198 misrouted status checks were removed.</p>
-    <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">FastMCP</span><span class="tag">Flask</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
+    <p class="meta"><span class="kind kind--research">Research</span>Oklahoma State University · 2024–2026</p>
+    <h3>An LLM Agent That Calls Tools Without Guessing</h3>
+    <p class="hook">LLM agents fail quietly: the model leaves out a parameter or invents one, and the tool still runs, against the wrong backend or for the wrong user.</p>
+    <p><b>What I built:</b> a chat assistant where a LangGraph agent operates a zero-knowledge proof system through 8 MCP tools I wrote. I added 20 server-side checks that fill in or override what the model sends, and tested everything with my own 82-query suite across 3 model families (6,000+ runs).</p>
+    <p class="result">Result: task completion rose from 70% to 93%, and a silent bug that sent 198 status checks to the wrong backend disappeared.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">MCP</span><span class="tag">Flask</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
     <p>
       <a class="btn btn--info btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs">Code</a>
       <a class="btn btn--inverse btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs/blob/main/manuscript/Natural-Language-ZK-Verification-via-Skeptical-MCP-Tools.pdf">Paper</a>
@@ -45,12 +46,24 @@ I am a software engineer and ML engineer based in New York City. I build backend
   </div>
 </div>
 
+<div class="card">
+  <p class="meta"><span class="kind kind--industry">Industry</span>Tirzok Private Ltd. · 2023</p>
+  <h3>ML Document Validation for a Mortgage Platform</h3>
+  <p class="hook">Every mortgage application comes with a stack of borrower documents, and someone had to open and check each one by hand.</p>
+  <p><b>What I built:</b> I led an ML pipeline for <a href="https://www.cliqloan.com/">CliQloan</a>, a mortgage loan origination system: classifiers sort each document and trim irrelevant pages, AWS Textract pulls out the key fields, and validation APIs check them automatically.</p>
+  <div class="flow"><span>Borrower documents</span><i>→</i><span>Classify type</span><i>→</i><span>Trim pages</span><i>→</i><span>AWS Textract</span><i>→</i><span>Validate fields</span></div>
+  <p class="result">Result: 45× faster than manual validation, with lower API costs.</p>
+  <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">AWS Textract</span><span class="tag">Lambda</span><span class="tag">ECR</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">Amazon MQ</span></div>
+  <p><a class="btn btn--inverse btn--small" href="/projects/">Details</a></p>
+</div>
+
 <div class="card has-media">
   <div>
-    <h3>DDoS Defense for Kubernetes Service Meshes</h3>
-    <p><b>Problem:</b> a flood of requests to one microservice can bring a whole app down, and service meshes like Istio only offer fixed rules set by hand.</p>
-    <p><b>What I built:</b> a single monitoring pod that reads Envoy telemetry, detects attacks with a separate ML model for each service, and patches Istio routing to move traffic to backup versions, with no changes to application code.</p>
-    <p class="result">Result: 94.0–97.8% detection accuracy, and parallel inference made detection 55.9% faster (37.4 ms vs. 84.8 ms).</p>
+    <p class="meta"><span class="kind kind--research">Research</span>Oklahoma State University · 2024–2026</p>
+    <h3>Automatic DDoS Defense for Kubernetes</h3>
+    <p class="hook">One flooded microservice can take down a whole app, and a service mesh like Istio only offers fixed rules that someone writes by hand.</p>
+    <p><b>What I built:</b> a single monitoring pod that reads each service's traffic from its Envoy sidecar, detects attacks with a separate ML model per service, and patches Istio routing to move traffic to a backup version, then restores it when the attack stops. No application code changes.</p>
+    <p class="result">Result: 94.0–97.8% detection accuracy, and parallel inference made each detection cycle 55.9% faster (37.4 ms vs. 84.8 ms).</p>
     <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Kubernetes</span><span class="tag">Istio</span><span class="tag">Envoy</span><span class="tag">Prometheus</span></div>
     <p>
       <a class="btn btn--info btn--small" href="https://github.com/nazrulhuda/AI-Driven-Anomaly-Detector-and-mitigation-as-a-service">Prototype code</a>
@@ -63,15 +76,25 @@ I am a software engineer and ML engineer based in New York City. I build backend
 </div>
 
 <div class="card">
-  <h3>FwdStar, a Freight Marketplace</h3>
-  <p><b>Problem:</b> in Bangladesh, freight is booked offline, through phone calls between shippers, brokers, and carriers.</p>
-  <p><b>What I built:</b> as technical lead and sole architect (2026–present, MVP), I turned the client's needs into a technical specification and built the platform in nine phases, from phone-first sign-up to GPS shipment tracking.</p>
-  <p class="result">Result: 50+ documented REST endpoints and 20+ PostgreSQL tables, with row locking so a load is never awarded twice.</p>
+  <p class="meta"><span class="kind kind--industry">Industry</span>Tirzok Private Ltd. · 2023</p>
+  <h3>Backend for a Government–Citizen Portal</h3>
+  <p class="hook">A national portal that connects citizens of Bangladesh with government services has to stay fast and give each type of user the right access.</p>
+  <p><b>What I built:</b> REST APIs and JWT-based role management for <a href="https://janatarsarkar.gov.bd/">Janatar Sarkar</a>, and I optimized its MongoDB aggregation queries.</p>
+  <p class="result">Result: serves 80,000+ citizens, with 40% lower query latency.</p>
+  <div class="tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">JWT</span><span class="tag">REST APIs</span></div>
+</div>
+
+<div class="card">
+  <p class="meta"><span class="kind kind--project">Project</span>Technical lead and sole architect · 2026–present · MVP</p>
+  <h3>FwdStar: A Freight Marketplace, from Spec to MVP</h3>
+  <p class="hook">In Bangladesh, freight is still booked offline between shippers, brokers, and carriers.</p>
+  <p><b>What I built:</b> I turned the client's verbal needs into a technical specification and built the platform in nine phases: phone-first sign-up, fleet management, a load board, awards, GPS shipment tracking, and SMS alerts, with an English and Bengali frontend.</p>
+  <p class="result">Result: 50+ documented REST endpoints and 20+ PostgreSQL tables, with row-level locking so a load is never awarded twice.</p>
   <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">PostGIS</span><span class="tag">Docker</span></div>
   <p><a class="btn btn--inverse btn--small" href="/projects/">Details</a></p>
 </div>
 
-More projects, including a LangChain + MCP chatbot and a license-plate reader, are on the [Projects](/projects/) page.
+Smaller builds, including a LangChain + MCP chatbot and a license-plate reader, are on the [Projects](/projects/) page.
 
 # Experience
 

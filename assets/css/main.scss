@@ -130,3 +130,25 @@
 
 /* Buttons inside page text should not look like underlined links */
 .page__content a.btn, .page__content a.btn:hover { text-decoration: none; }
+
+/* Project-card kind labels (Research / Industry / Project) and a simple text-drawn pipeline */
+.kind {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15em 0.55em;
+  border-radius: 4px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+.kind--research { background: mix(white, $info-color, 80%); color: darken($info-color, 30%); }
+.kind--industry { background: mix(white, $success-color, 80%); color: darken($success-color, 25%); }
+.kind--project  { background: mix(white, $warning-color, 78%); color: darken($warning-color, 35%); }
+.card .meta { font-size: 0.8em; color: $gray; }
+.card .hook { font-style: italic; }
+
+.flow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35em; margin: 0.7em 0; font-size: 0.8em; }
+.flow span { border: 1px solid $border-color; border-radius: 4px; padding: 0.2em 0.55em; background: $background-color; }
+.flow i { font-style: normal; color: $gray; }
