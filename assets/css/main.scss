@@ -127,3 +127,6 @@
 .timeline { list-style: none; margin-left: 0; padding-left: 0; }
 .timeline li { border-left: 3px solid mix(white, $info-color, 50%); padding: 0.1em 0 0.6em 0.9em; margin-bottom: 0.4em; }
 .timeline .when { display: block; font-size: 0.8em; color: $gray; }
+
+/* Buttons inside page text should not look like underlined links */
+.page__content a.btn, .page__content a.btn:hover { text-decoration: none; }
