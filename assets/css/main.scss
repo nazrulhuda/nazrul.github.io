@@ -1,0 +1,75 @@
+---
+---
+
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
+
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+
+@import "forms";
+
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+/* ===== Add these lines at the END of assets/css/main.scss ===== */
+
+/* Screenshot beside the text on computers, full width on phones */
+/* ===== These lines go at the END of assets/css/main.scss =====
+   (If you already added the .side-shot block before, keep it and add only the .wide-shot block.) */
+
+/* Photo beside the text on computers, full width on phones */
+/* ===== These lines go at the END of assets/css/main.scss =====
+   (If you already added the .side-shot block before, keep it and add only the .wide-shot block.) */
+
+/* Photo beside the text on computers, full width on phones */
+.side-shot {
+  display: block;
+  width: 100%;
+  margin: 0 auto 1em;
+  border-radius: 6px;
+}
+@media (min-width: 768px) {
+  .side-shot {
+    float: right;
+    width: 48%;
+    max-width: 460px;
+    margin: 0.3em 0 1em 1.5em;
+  }
+}
+
+/* Big screenshots and diagrams: exactly as wide as the text column */
+.wide-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.5em 0 0.5em;
+  border-radius: 6px;
+}
