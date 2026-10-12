@@ -29,7 +29,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 
 <div class="card has-media">
   <div>
-    <p class="meta"><span class="kind kind--research">Research</span>Oklahoma State University · 2024–2026</p>
+    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · 2024–2026</p>
     <h3>An LLM Agent That Calls Tools Without Guessing</h3>
     <p class="hook">LLM agents fail quietly: the model leaves out a parameter or invents one, and the tool still runs, against the wrong backend or for the wrong user.</p>
     <p><b>What I built:</b> a chat assistant where a LangGraph agent operates a zero-knowledge proof system through 8 MCP tools I wrote. I added 20 server-side checks that fill in or override what the model sends, and tested everything with my own 82-query suite across 3 model families (6,000+ runs).</p>
@@ -47,7 +47,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 </div>
 
 <div class="card">
-  <p class="meta"><span class="kind kind--industry">Industry</span>Tirzok Private Ltd. · 2023</p>
+  <p class="meta"><span class="kind kind--industry">Industry</span> · Tirzok Private Ltd. · 2023</p>
   <h3>ML Document Validation for a Mortgage Platform</h3>
   <p class="hook">Every mortgage application comes with a stack of borrower documents, and someone had to open and check each one by hand.</p>
   <p><b>What I built:</b> I led an ML pipeline for <a href="https://www.cliqloan.com/">CliQloan</a>, a mortgage loan origination system: classifiers sort each document and trim irrelevant pages, AWS Textract pulls out the key fields, and validation APIs check them automatically.</p>
@@ -59,7 +59,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 
 <div class="card has-media">
   <div>
-    <p class="meta"><span class="kind kind--research">Research</span>Oklahoma State University · 2024–2026</p>
+    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · 2024–2026</p>
     <h3>Automatic DDoS Defense for Kubernetes</h3>
     <p class="hook">One flooded microservice can take down a whole app, and a service mesh like Istio only offers fixed rules that someone writes by hand.</p>
     <p><b>What I built:</b> a single monitoring pod that reads each service's traffic from its Envoy sidecar, detects attacks with a separate ML model per service, and patches Istio routing to move traffic to a backup version, then restores it when the attack stops. No application code changes.</p>
@@ -76,7 +76,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 </div>
 
 <div class="card">
-  <p class="meta"><span class="kind kind--industry">Industry</span>Tirzok Private Ltd. · 2023</p>
+  <p class="meta"><span class="kind kind--industry">Industry</span> · Tirzok Private Ltd. · 2023</p>
   <h3>Backend for a Government–Citizen Portal</h3>
   <p class="hook">A national portal that connects citizens of Bangladesh with government services has to stay fast and give each type of user the right access.</p>
   <p><b>What I built:</b> REST APIs and JWT-based role management for <a href="https://janatarsarkar.gov.bd/">Janatar Sarkar</a>, and I optimized its MongoDB aggregation queries.</p>
@@ -85,7 +85,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 </div>
 
 <div class="card">
-  <p class="meta"><span class="kind kind--project">Project</span>Technical lead and sole architect · 2026–present · MVP</p>
+  <p class="meta"><span class="kind kind--project">Project</span> · Technical lead and sole architect · 2026–present · MVP</p>
   <h3>FwdStar: A Freight Marketplace, from Spec to MVP</h3>
   <p class="hook">In Bangladesh, freight is still booked offline between shippers, brokers, and carriers.</p>
   <p><b>What I built:</b> I turned the client's verbal needs into a technical specification and built the platform in nine phases: phone-first sign-up, fleet management, a load board, awards, GPS shipment tracking, and SMS alerts, with an English and Bengali frontend.</p>
