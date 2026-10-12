@@ -8,101 +8,104 @@ redirect_from:
   - /about.html
 ---
 
-I am a software engineer and ML engineer based in New York City. I build backend systems, ML pipelines, and LLM agents. At Tirzok, I led an ML document-validation system for a mortgage loan origination system that ran **45× faster** than checking documents by hand, and I built the backend of a government portal that serves **80,000+ citizens**. During my MS in Computer Science at Oklahoma State University, I built an LLM agent that runs zero-knowledge proof systems through custom MCP tools, and an ML system that detects DDoS attacks on Kubernetes and reroutes traffic automatically.
+I am a software engineer and ML engineer based in New York City. I build backend systems, ML pipelines, and LLM agents, and I like measuring whether they actually work. I recently finished my MS in Computer Science at Oklahoma State University.
 
-**I am open to Software Engineer, ML Engineer, and AI Engineer roles.**  
-[Résumé](/files/Shanto_Resume.pdf) · [Projects](/projects/) · [GitHub](https://github.com/nazrulhuda) · [LinkedIn](https://www.linkedin.com/in/nazrulhudashanto/) · [Email](mailto:mshanto@okstate.edu)
+**I am open to Software Engineer, ML Engineer, and AI Engineer roles.**
 
-## Skills
+<div class="stats">
+  <div class="stat"><strong>70% → 93%</strong><span>LLM agent task completion</span></div>
+  <div class="stat"><strong>45× faster</strong><span>ML document validation</span></div>
+  <div class="stat"><strong>80,000+</strong><span>citizens served by APIs I built</span></div>
+</div>
 
-- **Languages:** Python, Java, TypeScript/JavaScript, SQL, Bash
-- **Backend & APIs:** FastAPI, Flask, Spring Boot, Node.js, Next.js, REST APIs, JWT-based access control
-- **AI & ML:** LangGraph, LangChain, Model Context Protocol (FastMCP), ReAct agents, scikit-learn, PyTorch, LIME
-- **Cloud & Infrastructure:** Docker, Kubernetes, Istio/Envoy, Prometheus, AWS (Lambda, ECR, Textract, Amazon MQ)
-- **Data:** PostgreSQL and PostGIS, Redis, MongoDB, RabbitMQ
-
-# Experience
-
-## Junior Software Engineer · Tirzok Private Ltd.
-
-*Dhaka, Bangladesh · Feb 2023 – Dec 2023*
-
-- **ML document validation for [CliQloan](https://www.cliqloan.com/)**, AmitaSoft's mortgage loan origination system. I led a system where ML classifiers identify each document's type, a page-trimming model removes irrelevant pages, AWS Textract extracts the key fields, and a validation service checks them. It runs **45× faster than manual validation** and lowers API costs. *(scikit-learn, AWS Textract, Lambda, ECR, Amazon MQ, Spring Boot, PostgreSQL)*
-- **Backend of [Janatar Sarkar](https://janatarsarkar.gov.bd/)**, a government–citizen portal serving **80,000+ citizens**. I built RESTful APIs and a JWT-based role management system, and optimized MongoDB aggregation pipelines to cut query latency by **40%**. *(Node.js, MongoDB)*
-- **Payconz:** a Flask currency-conversion API for 5 currencies with PostgreSQL, for real-time multi-currency payroll and monthly currency-history reports.
-- Deployed services on Linux cloud servers and coordinated releases with clients.
-
-## Graduate Research Assistant · Oklahoma State University
-
-*Stillwater, Oklahoma · Jan 2024 – May 2026*
-
-- Built an LLM agent system that lets people request, check, download, and verify zero-knowledge proofs in plain language through **8 custom MCP tools**. Server-side checks raised task completion from **70% to 93%** across 6,000+ test runs on 3 model families. *(LangGraph, FastMCP, Flask, Redis, PostgreSQL, Docker)*
-- Built a DDoS detection and mitigation system for Kubernetes and Istio that runs as a single monitoring pod, with per-service ML models (**94.0–97.8% accuracy**), automatic traffic rerouting, and parallel inference **2.27× faster** than one central model.
-- Contributed a merged pull request to the open-source [CoSMeTIC](https://github.com/disys-lab/cosmetic) zkSNARK framework, including a fix for a bug that reported every valid KS and LRT proof as failed.
-
-## AI Instructor · NSF Research Experiences for Teachers
-
-*Oklahoma State University · May 2025 – Aug 2025*
-
-- Taught 10 K–12 teachers Python, machine learning, and Transformers through hands-on tutorials, guided their projects, and designed a Python-to-LLM curriculum.
-
-## Undergraduate Research Assistant · BRAC University
-
-*Dhaka, Bangladesh · Oct 2020 – Jan 2023*
-
-- Designed an image compression module and built a cloud storage and retrieval framework that cut user waiting time by up to **54%** and image size by up to **27%**, published in *IEEE Transactions on Cloud Computing* (corresponding author).
+<p class="cta">
+  <a class="btn btn--info" href="/files/Shanto_Resume.pdf">Download Résumé</a>
+  <a class="btn btn--inverse" href="mailto:mshanto@okstate.edu">Email Me</a>
+  <a class="btn btn--inverse" href="https://github.com/nazrulhuda">GitHub</a>
+  <a class="btn btn--inverse" href="https://www.linkedin.com/in/nazrulhudashanto/">LinkedIn</a>
+</p>
 
 # Featured Projects
 
-## LLM Agent for Zero-Knowledge Proofs
+<div class="card has-media">
+  <div>
+    <h3>LLM Agent for Zero-Knowledge Proofs</h3>
+    <p><b>Problem:</b> LLMs often leave out or invent the exact values that tools need, so an agent can quietly call the wrong backend or act for the wrong user.</p>
+    <p><b>What I built:</b> a chat assistant where a LangGraph agent runs a zero-knowledge proof system through 8 custom MCP tools, with 20 server-side checks that complete or override what the model sends.</p>
+    <p class="result">Result: task completion rose from 70% to 93%, and all 198 misrouted status checks were removed.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">FastMCP</span><span class="tag">Flask</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
+    <p>
+      <a class="btn btn--info btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs">Code</a>
+      <a class="btn btn--inverse btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs/blob/main/manuscript/Natural-Language-ZK-Verification-via-Skeptical-MCP-Tools.pdf">Paper</a>
+      <a class="btn btn--inverse btn--small" href="/images/skeptical_architecture.png">Architecture</a>
+    </p>
+  </div>
+  <div class="card-media">
+    <a href="/images/skeptical_chat.png"><img src="/images/skeptical_chat.png" alt="The Prover Assistant chat: a user checks whether their data was used, then follows a proof from submission to verification"></a>
+  </div>
+</div>
 
-*Python · LangGraph · FastMCP · Flask · Redis · PostgreSQL · Docker* · [**Code**](https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs) · [**Paper**](https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs/blob/main/manuscript/Natural-Language-ZK-Verification-via-Skeptical-MCP-Tools.pdf)
+<div class="card has-media">
+  <div>
+    <h3>DDoS Defense for Kubernetes Service Meshes</h3>
+    <p><b>Problem:</b> a flood of requests to one microservice can bring a whole app down, and service meshes like Istio only offer fixed rules set by hand.</p>
+    <p><b>What I built:</b> a single monitoring pod that reads Envoy telemetry, detects attacks with a separate ML model for each service, and patches Istio routing to move traffic to backup versions, with no changes to application code.</p>
+    <p class="result">Result: 94.0–97.8% detection accuracy, and parallel inference made detection 55.9% faster (37.4 ms vs. 84.8 ms).</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Kubernetes</span><span class="tag">Istio</span><span class="tag">Envoy</span><span class="tag">Prometheus</span></div>
+    <p>
+      <a class="btn btn--info btn--small" href="https://github.com/nazrulhuda/AI-Driven-Anomaly-Detector-and-mitigation-as-a-service">Prototype code</a>
+      <a class="btn btn--inverse btn--small" href="https://drive.google.com/file/d/1KdqIUXU8p5YX9Xib-yazjfmLLQQOJWKe/view?usp=sharing">Paper</a>
+    </p>
+  </div>
+  <div class="card-media">
+    <a href="/images/ddos_architecture.jpg"><img src="/images/ddos_architecture.jpg" alt="How the DDoS detection and rerouting framework works"></a>
+  </div>
+</div>
 
-A chat assistant that lets non-experts run a zero-knowledge proof system (CoSMeTIC) in plain language: a LangGraph ReAct agent calls 8 custom MCP tools, and Redis and PostgreSQL keep session and user state. LLMs often leave out or invent the exact values these tools need, so I designed 20 server-side checks that complete or override what the model sends before any tool runs.
-
-- An interceptor replaces any user ID the model invents with the real session identity.
-- A "plausible default" inside one tool sent **198 status checks to the wrong backend**; a server-side override removed all 198.
-- I evaluated it with my own 82-query test suite in 5 configurations and released the code, test suite, and all 6,371 result records, with a script that recomputes every number.
-
-[![System architecture of the LLM agent](/images/skeptical_architecture.png){: .wide-shot}](/images/skeptical_architecture.png)
-*How it works: every tool call from the LLM agent passes through an interceptor that replaces any identity the model invents, and the MCP server checks the request against stored state before calling the provers. Labels such as A3 and B2–B7 are design decisions from the paper, for example A3 (server-side identity) and B4–B6 (finding the right job, proof type, and prover from stored state).*
-
-## DDoS Defense for Kubernetes Service Meshes
-
-*Python · scikit-learn · Kubernetes · Istio · Envoy · Prometheus* · [**Prototype code**](https://github.com/nazrulhuda/AI-Driven-Anomaly-Detector-and-mitigation-as-a-service) · [**Paper**](https://drive.google.com/file/d/1KdqIUXU8p5YX9Xib-yazjfmLLQQOJWKe/view?usp=sharing)
-
-A flood of requests to one microservice can bring a whole app down, and service meshes like Istio only offer fixed rules set by hand. I built a framework that runs as a single monitoring pod, needs no changes to application code, detects attacks per service, and moves traffic away automatically.
-
-[![How the DDoS detection and rerouting framework works](/images/ddos_architecture.jpg){: .side-shot}](/images/ddos_architecture.jpg)
-
-- Reads each service's traffic from its Envoy sidecar's Prometheus endpoint.
-- Per-service classifiers (Random Forest, Gradient Boosting, SVM, Decision Tree) trained on 4,705 labeled traffic windows reach **94.0–97.8% accuracy**, with an Isolation Forest fallback for new services.
-- Patches Istio DestinationRule and VirtualService resources through the Kubernetes API to move traffic to backup versions, then restores normal routing after a cooldown.
-- Parallel inference takes **37.4 ms instead of 84.8 ms** per detection cycle on a 12-pod testbed.
-
-<div style="clear: both;"></div>
-
-## FwdStar, a Freight Marketplace
-
-*Next.js · TypeScript · FastAPI · PostgreSQL/PostGIS · Docker · 2026–present (MVP)* · [**Details**](/projects/)
-
-A multi-sided marketplace for shippers, brokers, and carriers in Bangladesh, where I am the technical lead and sole architect. I wrote the technical specification from the client's needs and built it in nine phases, from phone-first sign-up to shipment tracking.
-
-- FastAPI backend with **50+ documented REST endpoints** and a Next.js frontend in English and Bengali.
-- Supabase PostgreSQL with PostGIS (20+ tables), state machines with optimistic locking, and `SELECT FOR UPDATE` so a load is never awarded twice.
-- JWT verification, HTTP-only cookie sessions, CSRF protection, OTP with rate limiting, and audit logging.
+<div class="card">
+  <h3>FwdStar, a Freight Marketplace</h3>
+  <p><b>Problem:</b> in Bangladesh, freight is booked offline, through phone calls between shippers, brokers, and carriers.</p>
+  <p><b>What I built:</b> as technical lead and sole architect (2026–present, MVP), I turned the client's needs into a technical specification and built the platform in nine phases, from phone-first sign-up to GPS shipment tracking.</p>
+  <p class="result">Result: 50+ documented REST endpoints and 20+ PostgreSQL tables, with row locking so a load is never awarded twice.</p>
+  <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">PostGIS</span><span class="tag">Docker</span></div>
+  <p><a class="btn btn--inverse btn--small" href="/projects/">Details</a></p>
+</div>
 
 More projects, including a LangChain + MCP chatbot and a license-plate reader, are on the [Projects](/projects/) page.
 
-# Education
+# Experience
 
-- **M.S. in Computer Science**, Oklahoma State University · Jan 2024 – May 2026 · GPA 3.82/4.0
-- **B.S. in Computer Science**, BRAC University · May 2018 – May 2022
+<ul class="timeline">
+  <li><b>Graduate Research Assistant</b>, Oklahoma State University<span class="when">Jan 2024 – May 2026</span>Built the LLM agent and the Kubernetes DDoS defense above, and contributed a merged fix to the open-source <a href="https://github.com/disys-lab/cosmetic">CoSMeTIC</a> framework.</li>
+  <li><b>AI Instructor</b>, NSF Research Experiences for Teachers, Oklahoma State University<span class="when">May 2025 – Aug 2025</span>Taught Python, machine learning, and Transformers to 10 K–12 teachers.</li>
+  <li><b>Junior Software Engineer</b>, Tirzok Private Ltd.<span class="when">Feb 2023 – Dec 2023</span>Led ML document validation for <a href="https://www.cliqloan.com/">CliQloan</a>, 45× faster than manual checks; built APIs for a government portal serving 80,000+ citizens.</li>
+  <li><b>Undergraduate Research Assistant</b>, BRAC University<span class="when">Oct 2020 – Jan 2023</span>Built a cloud image retrieval framework that cut user waiting time by up to 54% (IEEE Transactions on Cloud Computing, corresponding author).</li>
+</ul>
+
+<p><a class="btn btn--info" href="/files/Shanto_Resume.pdf">Full Résumé</a></p>
+
+# Skills
+
+<div class="skill-group"><b>Languages</b><span class="tag">Python</span><span class="tag">Java</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">Bash</span></div>
+<div class="skill-group"><b>AI & ML</b><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">MCP</span><span class="tag">PyTorch</span><span class="tag">scikit-learn</span><span class="tag">LIME</span></div>
+<div class="skill-group"><b>Backend</b><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">Next.js</span><span class="tag">REST APIs</span><span class="tag">JWT</span></div>
+<div class="skill-group"><b>Cloud & Infrastructure</b><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Istio</span><span class="tag">Envoy</span><span class="tag">Prometheus</span><span class="tag">AWS</span></div>
+<div class="skill-group"><b>Data</b><span class="tag">PostgreSQL</span><span class="tag">PostGIS</span><span class="tag">Redis</span><span class="tag">MongoDB</span><span class="tag">RabbitMQ</span></div>
 
 # Publications
 
-My papers include a corresponding-author paper in *IEEE Transactions on Cloud Computing* and a first-author paper on the LLM agent above, under review at IEEE BigData 2026. [All publications](/publications/)
+A first-author paper on the LLM agent above is under review at IEEE BigData 2026, and I am the corresponding author of a paper in *IEEE Transactions on Cloud Computing*. [All publications](/publications/)
 
-# Outside Work
+# Education
+
+- **M.S. in Computer Science**, Oklahoma State University · 2026 · GPA 3.82/4.0
+- **B.S. in Computer Science**, BRAC University · 2022
+
+# Outside Work and Contact
 
 I am the founding captain of **Lagaan**, a cricket team in Stillwater, Oklahoma, which has won two trophies ([Hobbies](/hobbies/)).
+
+<p class="cta">
+  <a class="btn btn--info" href="mailto:mshanto@okstate.edu">Email Me</a>
+  <a class="btn btn--inverse" href="https://www.linkedin.com/in/nazrulhudashanto/">LinkedIn</a>
+</p>

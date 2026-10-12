@@ -73,3 +73,57 @@
   margin: 0.5em 0 0.5em;
   border-radius: 6px;
 }
+
+/* ===== Job-site homepage: headline numbers, buttons, project cards, tags, timeline ===== */
+
+.cta { margin: 0.8em 0 0.4em; }
+.cta .btn { margin-right: 0.4em; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75em;
+  margin: 1.2em 0 0.5em;
+}
+.stat {
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  padding: 0.7em 0.8em;
+  text-align: center;
+}
+.stat strong { display: block; font-size: 1.35em; color: $info-color; line-height: 1.2; }
+.stat span { font-size: 0.8em; color: $gray; }
+@media (max-width: 600px) {
+  .stats { grid-template-columns: 1fr; }
+}
+
+.card {
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 1em 1.2em;
+  margin: 0 0 1.4em;
+}
+.card h3 { margin-top: 0.2em; }
+.card p { margin: 0.4em 0; }
+.card .result { font-weight: bold; }
+.card-media img { width: 100%; border-radius: 6px; border: 1px solid $border-color; }
+@media (min-width: 768px) {
+  .card.has-media { display: grid; grid-template-columns: 1fr 42%; gap: 1.2em; align-items: start; }
+}
+
+.tags { margin: 0.6em 0; }
+.tag {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 0.15em 0.6em;
+  margin: 0 0.3em 0.35em 0;
+  border-radius: 999px;
+  background: mix(white, $info-color, 85%);
+  color: darken($info-color, 25%);
+}
+.skill-group { margin: 0.3em 0 0.7em; }
+.skill-group b { display: block; font-size: 0.85em; margin-bottom: 0.2em; }
+
+.timeline { list-style: none; margin-left: 0; padding-left: 0; }
+.timeline li { border-left: 3px solid mix(white, $info-color, 50%); padding: 0.1em 0 0.6em 0.9em; margin-bottom: 0.4em; }
+.timeline .when { display: block; font-size: 0.8em; color: $gray; }
