@@ -11,7 +11,7 @@ redirect_from:
 I am a software engineer and ML engineer based in New York City. I build backend systems, ML pipelines, and LLM agents. At Tirzok, I led an ML document-validation system for a mortgage loan origination system that ran **45× faster** than checking documents by hand, and I built the backend of a government portal that serves **80,000+ citizens**. During my MS in Computer Science at Oklahoma State University, I built an LLM agent that runs zero-knowledge proof systems through custom MCP tools, and an ML system that detects DDoS attacks on Kubernetes and reroutes traffic automatically.
 
 **I am open to Software Engineer, ML Engineer, and AI Engineer roles.**  
-[Projects](/projects/) · [GitHub](https://github.com/nazrulhuda) · [LinkedIn](https://www.linkedin.com/in/nazrulhudashanto/) · [Email](mailto:mshanto@okstate.edu)
+[Résumé](/files/Shanto_Resume.pdf) · [Projects](/projects/) · [GitHub](https://github.com/nazrulhuda) · [LinkedIn](https://www.linkedin.com/in/nazrulhudashanto/) · [Email](mailto:mshanto@okstate.edu)
 
 ## Skills
 

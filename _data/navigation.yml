@@ -1,5 +1,8 @@
 # main links
 main:
+  - title: "Résumé"
+    url: /files/Shanto_Resume.pdf
+
   - title: "Projects"
     url: /projects/
 
