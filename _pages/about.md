@@ -13,7 +13,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 **I am open to Software Engineer, ML Engineer, and AI Engineer roles.**
 
 <div class="stats">
-  <div class="stat"><strong>70% → 93%</strong><span>LLM agent task completion</span></div>
+  <div class="stat"><strong>+23 pts</strong><span>LLM agent task completion, 3 model families</span></div>
   <div class="stat"><strong>45× faster</strong><span>ML document validation</span></div>
   <div class="stat"><strong>80,000+</strong><span>citizens served by APIs I built</span></div>
 </div>
@@ -29,20 +29,21 @@ I am a software engineer and ML engineer in New York City. I like building syste
 
 <div class="card has-media">
   <div>
-    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · 2024–2026</p>
+    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · with Dr. Paritosh Ramanan · 2024–2026</p>
     <h3>An LLM Agent That Calls Tools Without Guessing</h3>
     <p class="hook">LLM agents fail quietly: the model leaves out a parameter or invents one, and the tool still runs, against the wrong backend or for the wrong user.</p>
-    <p><b>What I built:</b> a chat assistant where a LangGraph agent operates a zero-knowledge proof system through 8 MCP tools I wrote. I added 20 server-side checks that fill in or override what the model sends, and tested everything with my own 82-query suite across 3 model families (6,000+ runs).</p>
-    <p class="result">Result: task completion rose from 70% to 93%, and a silent bug that sent 198 status checks to the wrong backend disappeared.</p>
+    <p><b>What I built:</b> a chat assistant where a LangGraph agent operates a zero-knowledge proof system through 8 MCP tools I wrote. I added 20 server-side design decisions that check, fill in or override what the model sends, and tested everything with my own 82-query suite across 3 model families (6,000+ runs).</p>
+    <p class="result">Result: task completion rose by about 23 points on each of 3 model families (Qwen 3 32B: 70% → 93%), and the 198 status checks that went to the wrong backend with the fix turned off dropped to 0.</p>
     <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">MCP</span><span class="tag">Flask</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
     <p>
-      <a class="btn btn--info btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs">Code</a>
+      <a class="btn btn--info btn--small" href="https://youtu.be/MiPHBLRDVGc">Watch demo (1:55)</a>
+      <a class="btn btn--inverse btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs">Code</a>
       <a class="btn btn--inverse btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs/blob/main/manuscript/Natural-Language-ZK-Verification-via-Skeptical-MCP-Tools.pdf">Paper</a>
       <a class="btn btn--inverse btn--small" href="/images/skeptical_architecture.png">Architecture</a>
     </p>
   </div>
   <div class="card-media">
-    <a href="/images/skeptical_chat.png"><img src="/images/skeptical_chat.png" alt="The Prover Assistant chat: a user checks whether their data was used, then follows a proof from submission to verification"></a>
+    <a href="https://youtu.be/MiPHBLRDVGc"><img src="/images/skeptical_demo.gif" alt="Demo: without the fix, the agent says it can't find a proof job that the tracker still shows; with the fix, the same status question returns Status is done. Click to watch the full video."></a>
   </div>
 </div>
 
