@@ -36,14 +36,14 @@ I am a software engineer and ML engineer in New York City. I like building syste
     <p class="result">Result: task completion rose by about 23 points on each of 3 model families (Qwen 3 32B: 70% → 93%), and the 198 status checks that went to the wrong backend with the fix turned off dropped to 0.</p>
     <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">MCP</span><span class="tag">Flask</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span></div>
     <p>
-      <a class="btn btn--info btn--small" href="https://youtu.be/MiPHBLRDVGc">Watch demo (1:55)</a>
+      <a class="btn btn--info btn--small" href="https://youtu.be/AQkmil7ZKEE">Watch demo (1:55)</a>
       <a class="btn btn--inverse btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs">Code</a>
       <a class="btn btn--inverse btn--small" href="https://github.com/disys-lab/Skeptical-MCP-For-zkSNARKs/blob/main/manuscript/Natural-Language-ZK-Verification-via-Skeptical-MCP-Tools.pdf">Paper</a>
       <a class="btn btn--inverse btn--small" href="/images/skeptical_architecture.png">Architecture</a>
     </p>
   </div>
   <div class="card-media">
-    <a href="https://youtu.be/MiPHBLRDVGc"><img src="/images/skeptical_demo.gif" alt="Demo: without the fix, the agent says it can't find a proof job that the tracker still shows; with the fix, the same status question returns Status is done. Click to watch the full video."></a>
+    <a href="https://youtu.be/AQkmil7ZKEE"><img src="/images/skeptical_demo.gif" alt="Demo: without the fix, the agent says it can't find a proof job that the tracker still shows; with the fix, the same status question returns Status is done. Click to watch the full video."></a>
   </div>
 </div>
 
