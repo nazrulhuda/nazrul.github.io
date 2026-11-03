@@ -40,6 +40,19 @@ At Tirzok I also deployed services on Linux cloud servers and coordinated releas
 
 ## Engineering Projects
 
+### FilingCheck, an LLM Agent for SEC 10-K Filings
+
+*Portfolio project · Oct 2026–present · In progress (week 2 of 7)* · [Live demo](https://filingcheck.vercel.app) · [Code](https://github.com/nazrulhuda/filingcheck)
+
+FilingCheck answers questions about SEC 10-K reports. It grows out of my skeptical-tools research: let the AI understand the question, and let the server check everything that must be exact. I chose finance because the SEC publishes the correct numbers, so I can measure whether the checks help.
+
+- **75 reports, pinned:** the last three 10-Ks of 25 large US companies, split into 42,581 passages. A separate output-only check found 54 data problems while all 134 tests passed.
+- **Search, measured:** vector, keyword and hybrid search on 40 questions. Hybrid search did not beat vector search, and the report says so.
+- **App:** a FastAPI API with request limits, a Next.js page where the model is asked to cite a passage for each claim, 498 unit tests in GitHub Actions CI, and a live deploy on Vercel, Render and Neon.
+- **Next:** server-side checks on the company, fiscal year and metric before each tool runs, and a Verified, Unverified or Conflict label for every number against SEC XBRL data, tested on trap questions.
+
+**Tools:** Python, FastAPI, PostgreSQL, pgvector, OpenAI embeddings, Next.js, Docker, GitHub Actions
+
 ### FwdStar, a Freight Marketplace for Bangladesh
 
 *Technical lead and sole architect · 2026–present · MVP*
@@ -78,13 +91,13 @@ A comparison of H.264, H.265, and VP9 in FFmpeg, measuring quality with SSIM, PS
 
 ### BRACU-ResearcherHub
 
-A platform that helps BRAC University researchers find collaborators for their next project. [Code](https://github.com/nazrulhuda/BRACU-ResearcherHub) · [Demo](https://bracuresearcherhub.onrender.com/)
+A platform that helps BRAC University researchers find collaborators for their next project. [Code](https://github.com/nazrulhuda/BRACU-ResearcherHub)
 
 **Tools:** Django, Django REST Framework, PostgreSQL
 
 ### Personal Blog
 
-My personal blog, built with Django. [Code](https://github.com/nazrulhuda/nazrulhudashanto) · [Demo](https://nazrulxh.onrender.com/)
+My personal blog, built with Django. [Code](https://github.com/nazrulhuda/nazrulhudashanto)
 
 **Tools:** Django
 
