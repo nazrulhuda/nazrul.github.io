@@ -40,7 +40,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
   </p>
 </div>
 
-<div class="card has-media">
+<div class="card has-media media-wide">
   <div>
     <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · with Dr. Paritosh Ramanan · 2024–2026</p>
     <h3>An LLM Agent That Calls Tools Without Guessing</h3>
@@ -57,6 +57,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
   </div>
   <div class="card-media">
     <a href="https://youtu.be/AQkmil7ZKEE"><img src="/images/skeptical_demo.gif" alt="Demo: without the fix, the agent says it can't find a proof job that the tracker still shows; with the fix, the same status question returns Status is done. Click to watch the full video."></a>
+    <p class="media-caption">The same status question, without and with the fix. Click to watch the full demo (1:55).</p>
   </div>
 </div>
 
