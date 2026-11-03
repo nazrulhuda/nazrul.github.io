@@ -56,8 +56,8 @@ I am a software engineer and ML engineer in New York City. I like building syste
     </p>
   </div>
   <div class="card-media">
-    <a href="https://youtu.be/AQkmil7ZKEE"><img src="/images/skeptical_demo.gif" alt="Demo: without the fix, the agent says it can't find a proof job that the tracker still shows; with the fix, the same status question returns Status is done. Click to watch the full video."></a>
-    <p class="media-caption">The same status question, without and with the fix. Click to watch the full demo (1:55).</p>
+    <a href="/images/skeptical_demo.mp4" target="_blank" rel="noopener"><video src="/images/skeptical_demo.mp4" poster="/images/skeptical_demo_poster.jpg" autoplay muted loop playsinline aria-label="Demo: without the fix, the agent says it can't find a proof job that the tracker still shows; with the fix, the same status question returns Status is done."></video></a>
+    <p class="media-caption">The same status question, without and with the fix. Click to see it full size, or <a href="https://youtu.be/AQkmil7ZKEE">watch the full demo (1:55)</a>.</p>
   </div>
 </div>
 

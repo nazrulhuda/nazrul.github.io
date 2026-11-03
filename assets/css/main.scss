@@ -113,7 +113,10 @@
   .card.has-media.media-wide { display: block; }
 }
 .media-wide .card-media { margin-top: 1em; }
-.media-wide .card-media img { display: block; max-width: 960px; margin: 0 auto; }
+.card-media video { width: 100%; display: block; border-radius: 6px; border: 1px solid $border-color; }
+/* Widen this card into the empty space the theme leaves right of the text column */
+@media (min-width: 1024px) { .card.media-wide { margin-right: -140px; } }
+@media (min-width: 1280px) { .card.media-wide { margin-right: -200px; } }
 .media-caption { font-size: 0.8em; color: $gray; text-align: center; margin-top: 0.4em; }
 
 .tags { margin: 0.6em 0; }
