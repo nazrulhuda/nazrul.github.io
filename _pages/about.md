@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi, I'm Nazrul 👋"
+title: "Software & ML Engineer in New York"
 excerpt: "Software engineer and ML engineer"
 author_profile: true
 redirect_from:
@@ -20,12 +20,25 @@ I am a software engineer and ML engineer in New York City. I like building syste
 
 <p class="cta">
   <a class="btn btn--info" href="/files/Shanto_Resume.pdf">Download Résumé</a>
-  <a class="btn btn--inverse" href="mailto:mshanto@okstate.edu">Email Me</a>
+  <a class="btn btn--inverse" href="mailto:nazrulhudashanto@gmail.com">Email Me</a>
   <a class="btn btn--inverse" href="https://github.com/nazrulhuda">GitHub</a>
-  <a class="btn btn--inverse" href="https://www.linkedin.com/in/nazrulhudashanto/">LinkedIn</a>
+  <a class="btn btn--inverse" href="https://www.linkedin.com/in/mshanto/">LinkedIn</a>
 </p>
 
 # Featured Projects
+
+<div class="card">
+  <p class="meta"><span class="kind kind--project">Project</span> · Portfolio project · Oct 2026–present · In progress (week 2 of 7)</p>
+  <h3>FilingCheck: An LLM Agent for SEC 10-K Filings</h3>
+  <p class="hook">In finance, a confident wrong number is worse than "I don't know". Asked "How much net revenue did Morgan report last year?", a plain AI picked Morgan Stanley without asking and gave the 2023 number instead of 2025.</p>
+  <p><b>What I built so far:</b> the last three 10-K reports of 25 large US companies (75 reports, 42,581 passages), vector, keyword and hybrid search measured on 40 questions, a FastAPI API, a Next.js page where the model is asked to cite a passage for each claim, GitHub Actions CI, and a live deploy.</p>
+  <p class="result">Next: the server checks the company, fiscal year and metric before each tool runs, and every number gets a Verified, Unverified or Conflict label against SEC XBRL data, measured on trap questions. Results in December.</p>
+  <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">pgvector</span><span class="tag">OpenAI embeddings</span><span class="tag">Next.js</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span></div>
+  <p>
+    <a class="btn btn--info btn--small" href="https://filingcheck.vercel.app">Live demo</a>
+    <a class="btn btn--inverse btn--small" href="https://github.com/nazrulhuda/filingcheck">Code</a>
+  </p>
+</div>
 
 <div class="card has-media">
   <div>
@@ -123,13 +136,13 @@ A first-author paper on the LLM agent above is under review at IEEE BigData 2026
 # Education
 
 - **M.S. in Computer Science**, Oklahoma State University · 2026 · GPA 3.82/4.0
-- **B.S. in Computer Science**, BRAC University · 2022
+- **B.S. in Computer Science**, BRAC University · 2022 · CGPA 3.36/4.0
 
 # Outside Work and Contact
 
 I am the founding captain of **Lagaan**, a cricket team in Stillwater, Oklahoma, which has won two trophies ([Hobbies](/hobbies/)).
 
 <p class="cta">
-  <a class="btn btn--info" href="mailto:mshanto@okstate.edu">Email Me</a>
-  <a class="btn btn--inverse" href="https://www.linkedin.com/in/nazrulhudashanto/">LinkedIn</a>
+  <a class="btn btn--info" href="mailto:nazrulhudashanto@gmail.com">Email Me</a>
+  <a class="btn btn--inverse" href="https://www.linkedin.com/in/mshanto/">LinkedIn</a>
 </p>
