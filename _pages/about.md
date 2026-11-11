@@ -42,7 +42,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 
 <div class="card has-media media-wide">
   <div>
-    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · with Dr. Paritosh Ramanan · 2024–2026</p>
+    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · with Dr. Paritosh Ramanan · 2024–2026 · paper accepted at IEEE BigData 2026</p>
     <h3>An LLM Agent That Calls Tools Without Guessing</h3>
     <p class="hook">LLM agents fail quietly: the model leaves out a parameter or invents one, and the tool still runs, against the wrong backend or for the wrong user.</p>
     <p><b>What I built:</b> a chat assistant where a LangGraph agent operates a zero-knowledge proof system through 8 MCP tools I wrote. I added 20 server-side design decisions that check, fill in or override what the model sends, and tested everything with my own 82-query suite across 3 model families (6,000+ runs).</p>
@@ -132,7 +132,7 @@ Smaller builds, including a LangChain + MCP chatbot and a license-plate reader, 
 
 # Publications
 
-A first-author paper on the LLM agent above is under review at IEEE BigData 2026, and I am the corresponding author of a paper in *IEEE Transactions on Cloud Computing*. [All publications](/publications/)
+A first-author paper on the LLM agent above was accepted at IEEE BigData 2026, and I am the corresponding author of a paper in *IEEE Transactions on Cloud Computing*. [All publications](/publications/)
 
 # Education
 
