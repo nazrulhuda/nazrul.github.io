@@ -27,17 +27,25 @@ I am a software engineer and ML engineer in New York City. I like building syste
 
 # Featured Projects
 
-<div class="card">
-  <p class="meta"><span class="kind kind--project">Project</span> · Portfolio project · Oct 2026–present · In progress (week 2 of 7)</p>
-  <h3>FilingCheck: An LLM Agent for SEC 10-K Filings</h3>
-  <p class="hook">In finance, a confident wrong number is worse than "I don't know". Asked "How much net revenue did Morgan report last year?", a plain AI picked Morgan Stanley without asking and gave the 2023 number instead of 2025.</p>
-  <p><b>What I built so far:</b> the last three 10-K reports of 25 large US companies (75 reports, 42,581 passages), vector, keyword and hybrid search measured on 40 questions, a FastAPI API, a Next.js page where the model is asked to cite a passage for each claim, GitHub Actions CI, and a live deploy.</p>
-  <p class="result">Next: the server checks the company, fiscal year and metric before each tool runs, and every number gets a Verified, Unverified or Conflict label against SEC XBRL data, measured on trap questions. Results in December.</p>
-  <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">pgvector</span><span class="tag">OpenAI embeddings</span><span class="tag">Next.js</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span></div>
-  <p>
-    <a class="btn btn--info btn--small" href="https://filingcheck.vercel.app">Live demo</a>
-    <a class="btn btn--inverse btn--small" href="https://github.com/nazrulhuda/filingcheck">Code</a>
-  </p>
+<div class="card has-media media-wide">
+  <div>
+    <p class="meta"><span class="kind kind--project">Project</span> · Independent project · Oct–Nov 2026 · version 1.0, live</p>
+    <h3>FilingCheck: An LLM Agent for SEC 10-K Filings, Measured</h3>
+    <p class="hook">In finance, a confident wrong number is worse than "I don't know". Asked "How much net revenue did Morgan report last year?", a plain AI picked Morgan Stanley without asking and gave the 2023 number instead of 2025.</p>
+    <p><b>What I built:</b> an agent over the last three 10-K reports of 25 large US companies (75 filings, 42,612 passages and each filing's own XBRL facts) with three tools: search, a number lookup and a calculator. Before each number lookup runs, the server checks the company, the fiscal year, the metric and period, the units and the segment against the question and the SEC data; it repairs what the question settles, sends the rest back to the model, and logs every decision. After the model answers, every number is labeled Verified, Conflict or Unverified against the answer's sources. Then I measured it: a pre-registered evaluation on 110 sealed trap questions, 3 runs each, scored by rules fixed in advance and reproducible from the committed result rows with no API key.</p>
+    <p class="result">Result: the server checks cut confidently wrong answers from 18.5% to 10.6% (95% interval of the difference -12.7 to -3.6 points). The same rules written into the model's prompt, with no checks, were more accurate (85.2% against 75.5%) and level on confidently wrong answers, at about two and a half times the cost per question. The report says both.</p>
+    <div class="tags"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">pgvector</span><span class="tag">SEC XBRL</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span></div>
+    <p>
+      <a class="btn btn--info btn--small" href="https://filingcheck.vercel.app">Live demo</a>
+      <a class="btn btn--inverse btn--small" href="https://github.com/nazrulhuda/filingcheck">Code</a>
+      <a class="btn btn--inverse btn--small" href="https://github.com/nazrulhuda/filingcheck/blob/v1.0/eval/results/2026-11-14_final_report.md">Full report</a>
+      <a class="btn btn--inverse btn--small" href="https://github.com/nazrulhuda/filingcheck/blob/v1.0/eval/PREREGISTRATION.md">Pre-registration</a>
+    </p>
+  </div>
+  <div class="card-media">
+    <a href="/images/filingcheck_summary.png"><img src="/images/filingcheck_summary.png" alt="Correct answers and confidently wrong answers on the 110 held-out questions, for search only, the agent with no checks, the agent with the rules in the prompt, and the agent with the server checks, each with its 95% interval"></a>
+    <p class="media-caption">Correct and confidently wrong answers on the 110 held-out questions, by arm, with 95% intervals. Drawn by the project's report code from the committed result rows.</p>
+  </div>
 </div>
 
 <div class="card has-media media-wide">

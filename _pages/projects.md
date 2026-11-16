@@ -42,16 +42,17 @@ At Tirzok I also deployed services on Linux cloud servers and coordinated releas
 
 ### FilingCheck, an LLM Agent for SEC 10-K Filings
 
-*Portfolio project · Oct 2026–present · In progress (week 2 of 7)* · [Live demo](https://filingcheck.vercel.app) · [Code](https://github.com/nazrulhuda/filingcheck)
+*Independent project · Oct–Nov 2026 · version 1.0, live* · [Live demo](https://filingcheck.vercel.app) · [Code](https://github.com/nazrulhuda/filingcheck) · [Full report](https://github.com/nazrulhuda/filingcheck/blob/v1.0/eval/results/2026-11-14_final_report.md)
 
-FilingCheck answers questions about SEC 10-K reports. It grows out of my skeptical-tools research: let the AI understand the question, and let the server check everything that must be exact. I chose finance because the SEC publishes the correct numbers, so I can measure whether the checks help.
+FilingCheck answers questions about SEC 10-K reports. It grows out of my skeptical-tools research: let the AI understand the question, and let the server check everything that must be exact. I chose finance because the SEC publishes the correct numbers, so I could measure whether the checks help.
 
-- **75 reports, pinned:** the last three 10-Ks of 25 large US companies, split into 42,581 passages. A separate output-only check found 54 data problems while all 134 tests passed.
-- **Search, measured:** vector, keyword and hybrid search on 40 questions. Hybrid search did not beat vector search, and the report says so.
-- **App:** a FastAPI API with request limits, a Next.js page where the model is asked to cite a passage for each claim, 498 unit tests in GitHub Actions CI, and a live deploy on Vercel, Render and Neon.
-- **Next:** server-side checks on the company, fiscal year and metric before each tool runs, and a Verified, Unverified or Conflict label for every number against SEC XBRL data, tested on trap questions.
+- **75 reports, pinned:** the last three 10-Ks of 25 large US companies, split into 42,612 passages, with each filing's own XBRL facts cross-checked against the SEC's companyfacts. Pinned by accession number, so the evaluation always runs against the same filings.
+- **Three tools, checked before they run:** search over the passages, a number lookup and a calculator. Five server-side checks on each number lookup (the company, the fiscal year, the metric and period, the units, the segment) and one on each search (the fiscal year) repair what the question settles and send the rest back to the model, once. Every decision goes into an override log kept with the answer.
+- **Number labels:** after the model answers, every figure is labeled Verified, Conflict or Unverified against the answer's sources, without changing what the model wrote.
+- **Measured once, by rules fixed in advance:** a pre-registration merged before the first result row; 110 sealed held-out trap questions, 3 runs each, from a tagged commit. The server checks cut confidently wrong answers from 18.5% to 10.6% (95% interval of the difference -12.7 to -3.6 points). The same rules written into the prompt, with no checks, were more accurate (85.2% against 75.5%) and level on confidently wrong answers, at about two and a half times the cost per question. One command recomputes every number from the committed rows with no API key and no database.
+- **App:** a FastAPI API with request limits and a request log, a Next.js page that shows each tool step, the check decisions and a label next to each number, a deterministic CI gate that runs the real agent and checks on 24 scripted scenarios with no model, and a live deploy on Vercel, Render and Neon.
 
-**Tools:** Python, FastAPI, PostgreSQL, pgvector, OpenAI embeddings, Next.js, Docker, GitHub Actions
+**Tools:** Python, LangGraph, FastAPI, PostgreSQL, pgvector, SEC XBRL, OpenAI embeddings, Next.js, TypeScript, Docker, GitHub Actions
 
 ### FwdStar, a Freight Marketplace for Bangladesh
 
