@@ -82,7 +82,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
 
 <div class="card has-media">
   <div>
-    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · 2024–2026</p>
+    <p class="meta"><span class="kind kind--research">Research</span> · Oklahoma State University · with Dr. Sharmin Jahan · 2024–2026 · paper accepted at ICOIN 2027</p>
     <h3>Automatic DDoS Defense for Kubernetes</h3>
     <p class="hook">One flooded microservice can take down a whole app, and a service mesh like Istio only offers fixed rules that someone writes by hand.</p>
     <p><b>What I built:</b> a single monitoring pod that reads each service's traffic from its Envoy sidecar, detects attacks with a separate ML model per service, and patches Istio routing to move traffic to a backup version, then restores it when the attack stops. No application code changes.</p>
@@ -140,7 +140,7 @@ Smaller builds, including a LangChain + MCP chatbot and a license-plate reader, 
 
 # Publications
 
-A first-author paper on the LLM agent above was accepted at IEEE BigData 2026, and I am the corresponding author of a paper in *IEEE Transactions on Cloud Computing*. [All publications](/publications/)
+A first-author paper on the LLM agent above was accepted at IEEE BigData 2026, a paper on the DDoS defense above was accepted at ICOIN 2027, and I am the corresponding author of a paper in *IEEE Transactions on Cloud Computing*. [All publications](/publications/)
 
 # Education
 
