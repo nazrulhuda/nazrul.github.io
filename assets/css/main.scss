@@ -81,7 +81,7 @@
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.75em;
   margin: 1.2em 0 0.5em;
 }
@@ -94,7 +94,8 @@
 .stat strong { display: block; font-size: 1.35em; color: $info-color; line-height: 1.2; }
 .stat span { font-size: 0.8em; color: $gray; }
 @media (max-width: 600px) {
-  .stats { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat strong { font-size: 1.15em; }
 }
 
 .card {
@@ -118,6 +119,9 @@
 @media (min-width: 1024px) { .card.media-wide { margin-right: -140px; } }
 @media (min-width: 1280px) { .card.media-wide { margin-right: -200px; } }
 .media-caption { font-size: 0.8em; color: $gray; text-align: center; margin-top: 0.4em; }
+/* Two pictures side by side (a tall page screenshot and a wide chart, at the same height); stacked on phones */
+.media-pair { display: grid; gap: 1em; align-items: start; }
+@media (min-width: 768px) { .media-pair { grid-template-columns: 4fr 11fr; } }
 
 .tags { margin: 0.6em 0; }
 .tag {
