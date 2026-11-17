@@ -81,20 +81,25 @@
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.75em;
   margin: 1.2em 0 0.5em;
 }
 .stat {
   border: 1px solid $border-color;
   border-radius: 6px;
-  padding: 0.7em 0.8em;
+  padding: 0.7em 0.5em;
   text-align: center;
 }
-.stat strong { display: block; font-size: 1.35em; color: $info-color; line-height: 1.2; }
+.stat strong { display: block; font-size: 1.35em; color: $info-color; line-height: 1.2; white-space: nowrap; }
 .stat span { font-size: 0.8em; color: $gray; }
+/* Four in a row only from 1280 px: between 1024 and 1279 px the theme's sidebar leaves boxes too
+   narrow to keep "18.5% → 10.6%" on one line */
+@media (min-width: 1280px) {
+  .stats { grid-template-columns: repeat(4, 1fr); }
+  .stat strong { font-size: 1.2em; }
+}
 @media (max-width: 600px) {
-  .stats { grid-template-columns: repeat(2, 1fr); }
   .stat strong { font-size: 1.15em; }
 }
 
@@ -119,9 +124,10 @@
 @media (min-width: 1024px) { .card.media-wide { margin-right: -140px; } }
 @media (min-width: 1280px) { .card.media-wide { margin-right: -200px; } }
 .media-caption { font-size: 0.8em; color: $gray; text-align: center; margin-top: 0.4em; }
-/* Two pictures side by side (a tall page screenshot and a wide chart, at the same height); stacked on phones */
+/* Two pictures side by side in equal columns (the saved answer and the chart); stacked on phones */
 .media-pair { display: grid; gap: 1em; align-items: start; }
-@media (min-width: 768px) { .media-pair { grid-template-columns: 4fr 11fr; } }
+.media-pair .media-caption { text-align: left; }
+@media (min-width: 768px) { .media-pair { grid-template-columns: 1fr 1fr; } }
 
 .tags { margin: 0.6em 0; }
 .tag {
