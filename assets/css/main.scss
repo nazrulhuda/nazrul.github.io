@@ -170,3 +170,8 @@
 .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35em; margin: 0.7em 0; font-size: 0.8em; }
 .flow span { border: 1px solid $border-color; border-radius: 4px; padding: 0.2em 0.55em; background: $background-color; }
 .flow i { font-style: normal; color: $gray; }
+
+/* Sidebar lines wrap instead of being cut off on narrow desktop screens */
+@include breakpoint($large) {
+  .author__urls li { white-space: normal; }
+}
