@@ -94,7 +94,7 @@ I am a software engineer and ML engineer in New York City. I like building syste
     <h3>Automatic DDoS Defense for Kubernetes</h3>
     <p class="hook">One flooded microservice can take down a whole app, and a service mesh like Istio only offers fixed rules that someone writes by hand.</p>
     <p><b>What I built:</b> a single monitoring pod that reads each service's traffic from its Envoy sidecar, detects attacks with a separate ML model per service, and patches Istio routing to move traffic to a backup version, then restores it when the attack stops. No application code changes.</p>
-    <p class="result">Result: 94.0–97.8% detection accuracy, and parallel inference made each detection cycle 55.9% faster (37.4 ms vs. 84.8 ms).</p>
+    <p class="result">Result: 94.0–97.8% detection accuracy, and parallel inference cut detection-cycle time by 55.9% (84.8 ms → 37.4 ms, 2.27× faster).</p>
     <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Kubernetes</span><span class="tag">Istio</span><span class="tag">Envoy</span><span class="tag">Prometheus</span></div>
     <p>
       <a class="btn btn--info btn--small" href="https://github.com/nazrulhuda/AI-Driven-Anomaly-Detector-and-mitigation-as-a-service">Prototype code</a>
@@ -141,9 +141,9 @@ Smaller builds, including a LangChain + MCP chatbot and a license-plate reader, 
 # Skills
 
 <div class="skill-group"><b>Languages</b><span class="tag">Python</span><span class="tag">Java</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">Bash</span></div>
-<div class="skill-group"><b>AI & ML</b><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">MCP</span><span class="tag">PyTorch</span><span class="tag">scikit-learn</span><span class="tag">LIME</span></div>
+<div class="skill-group"><b>AI & ML</b><span class="tag">LangGraph</span><span class="tag">LangChain</span><span class="tag">MCP</span><span class="tag">OpenAI API</span><span class="tag">RAG</span><span class="tag">pgvector</span><span class="tag">hybrid retrieval</span><span class="tag">LLM evaluation</span><span class="tag">PyTorch</span><span class="tag">scikit-learn</span><span class="tag">LIME</span></div>
 <div class="skill-group"><b>Backend</b><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">Next.js</span><span class="tag">REST APIs</span><span class="tag">JWT</span></div>
-<div class="skill-group"><b>Cloud & Infrastructure</b><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Istio</span><span class="tag">Envoy</span><span class="tag">Prometheus</span><span class="tag">AWS</span></div>
+<div class="skill-group"><b>Cloud & Infrastructure</b><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Istio</span><span class="tag">Envoy</span><span class="tag">Prometheus</span><span class="tag">AWS</span><span class="tag">GitHub Actions</span></div>
 <div class="skill-group"><b>Data</b><span class="tag">PostgreSQL</span><span class="tag">PostGIS</span><span class="tag">Redis</span><span class="tag">MongoDB</span><span class="tag">RabbitMQ</span></div>
 
 # Publications
